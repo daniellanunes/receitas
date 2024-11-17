@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhesActivity">
+
+    <ImageView
+        android:id="@+id/img_detalhe"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carne1" />
+
+    <TextView
+        android:id="@+id/text_titulo_detalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="ESCONDIDINHO DE CAMARÃO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_detalhe" />
+
+    <TextView
+        android:id="@+id/text_preparo_detalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center|left"
+        android:text="Preparo"
+        app:drawableLeftCompat="@drawable/ic_receita_24"
+        app:layout_constraintStart_toStartOf="@+id/text_titulo_detalhe"
+        app:layout_constraintTop_toBottomOf="@+id/text_titulo_detalhe" />
+
+    <TextView
+        android:id="@+id/text_tempo_detalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="25 Min"
+        android:textColor="@color/primaria"
+        app:layout_constraintBottom_toBottomOf="@+id/text_preparo_detalhe"
+        app:layout_constraintStart_toEndOf="@+id/text_preparo_detalhe"
+        app:layout_constraintTop_toTopOf="@+id/text_preparo_detalhe" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Receita:"
+        android:textColor="@color/primaria"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/text_preparo_detalhe"
+        app:layout_constraintTop_toBottomOf="@+id/text_preparo_detalhe" />
+
+    <Button
+        android:id="@+id/btn_voltar_detalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="48dp"
+        android:text="VOLTAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_receita_detalhe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="- 1 kg de Camarão"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
